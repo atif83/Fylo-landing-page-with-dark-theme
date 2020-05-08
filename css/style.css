@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+	--main-background:hsl(218, 28%, 13%);
+
+
+--email-signup-background: hsl(217, 28%, 15%);
+ --footer-background: hsl(216, 53%, 9%);
+--testimonials-background: hsl(219, 30%, 18%);
+
+/*### Accent*/
+
+--Cyan-action-gradient: hsl(176, 68%, 64%);
+--Blue-action-gradient: hsl(198, 60%, 50%);
+
+
+
+}
+h1,h2,h3{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+}
+
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	color: white;
+	font-size: 14px;
+	background: var(--main-background);
+ 
+
+}
+nav ,header,section,footer {
+margin:30px auto;
+width: 80%;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+ul {
+	list-style: none;
+		display: flex;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+
+}
+p{
+	margin: 20px auto;
+	padding: 20px;
+	line-height: 1.5;
+	width: 80%;
+	text-align: center;
+
+}
+nav ul {
+	list-style: none;
+	display: flex;
+
+}
+nav ul li{
+	padding-right: 20px;
+	flex: 0 1 auto;
+}
+.productive{
+	display: flex;
+}.productive div {
+	flex: 1;
+
+}
+.services{
+display: grid;
+grid-gap: 20px;
+ grid-template-columns: repeat(2,minmax(200px,1fr));
+
+}
+.testimoial{
+display: grid;
+grid-gap: 20px;
+ grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+
+}.testimoial img{
+	border-radius: 50%;
+	width:91px; height:90px; 
+}
+.btn{
+		background:var(--Blue-action-gradient);
+background-image: linear-gradient(hsl(198, 60%, 50%),hsl(176, 68%, 64%));
+
+color: white;
+border-radius: 20px;
+display: inline-block;
+border:0;
+padding: 0.8rem 2rem;
+text-align: center;
+}
+.fy-link{
+	color: var(--Cyan-action-gradient);
+	border-bottom: 1px solid  var(--Cyan-action-gradient);
+	text-align: center;
+}
+.box-img{
+	display: flex;
+	justify-content: flex-start;
+}
+.profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+     padding: 10px;
+  }
+.profile-name {
+    display: flex;
+    flex-direction: column;
+      margin-right:  auto;
+    margin-top: 20px;
+ 
+  }
+  .profile-name h3,.profile-name h6{
+  	 display: flex;
+    margin: 0;
+  }
+footer{
+	background:var(--footer-background);
+	margin: 0 auto;
+	 
+	 
+padding: 30px; 
+}
+footer ul {
+
+display: flex;
+}
+footer ul li {
+
+ padding: 15px;
+ }
+.box{
+	background:var(--testimonials-background);
+	border-radius: 5px;
+
+
+}
+.box1{
+	padding: 20px;
+	margin: 10px auto;
+}
+.box1 img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+   }
+
+h3{
+	text-align: center;
+	padding: 5px;
+}
+.signup{
+	background: var(--email-signup-background);
+	margin:30px auto;
+	width: 60%;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	top: 50px;
+	left:0;
+
+}
+.headertext{
+	 margin:30px auto;
+	width: 60%;
+	padding: 20px;
+	text-align: center;
+
+}
+.email{
+	border-radius: 20px;
+display: inline-block;
+border:0;
+padding: 0.8rem 1rem;
+margin: 10px auto;
+
+}
+ .img1{
+width: 50%;
+ 
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+
+}
+.sec{
+display: flex;
+justify-content: space-around;
+
+
+}
+.icon{
+	margin-right: 5px;
+}
+.sec1{
+display: flex;
+width: 20%;
+
+
+}
+.sec2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.sec3 {
+	display: flex;
+	flex-direction: column;
+
+}
+.box1 h2{
+	text-align: center;
+	padding-top: 20px ;
+	padding-bottom:  20px ;
+	
+}
+@media (max-width: 500px){
+.sec{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.headertext{
+	width: 100%;
+}
+.sec1{
+	width: 80%;
+
+
+}
+	footer{
+		display: flex;
+		flex-direction: column;
+		margin-top:  50px ;
+		padding: 20px;
+
+	}
+footer ul  {
+	display: list-item;
+}
+.footer-logo
+{
+	width: 60%;
+	margin: 50px auto;
+	 
+}
+.so-icon{
+	display: flex;
+	justify-content: center;
+	margin: 20px auto;
+
+}
+.so-icon li {
+	padding: 5px;
+}
+.signup{
+	width: 100%;
+}
+
+.services{
+display: grid;
+grid-gap: 20px;
+justify-content: center;
+align-items: center;
+ grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+}
+.productive{
+	flex-direction: column;
+}
+.img1{
+width: 100%;
+}
+
+}
