@@ -20,9 +20,10 @@
 h1,h2,h3{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	padding-top: 20px;
+		padding-top: 20px;
 }
 
+ 
 *{
 
 	margin: 0;
@@ -35,11 +36,18 @@ body{
 	color: white;
 	font-size: 14px;
 	background: var(--main-background);
+ background-image: url(..//images/bg-curvy-desktop.svg);
+	top:0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+ background-position: center top; 
  
-
 }
-nav ,header,section,footer {
-margin:30px auto;
+nav ,header,section {
+margin:80px auto;
 width: 80%;
 }
 nav{
@@ -106,11 +114,31 @@ border:0;
 padding: 0.8rem 2rem;
 text-align: center;
 }
+
 .fy-link{
 	color: var(--Cyan-action-gradient);
 	border-bottom: 1px solid  var(--Cyan-action-gradient);
 	text-align: center;
-}
+	padding-top: 10px;
+ justify-content: center;
+ }
+ .rt{
+ 	justify-content: center;
+ }
+ .rt h2{
+ 	text-align: left;
+ 	padding-bottom: 20px;
+ }
+ .rt p {
+ 	 	padding: 0;
+ 	 	margin: 0 ;
+ 	 	text-align: left;
+ 	 	padding-bottom: 20px;
+
+ }
+ section,footer{
+ 	padding-top:  100px;
+ }
 .box-img{
 	display: flex;
 	justify-content: flex-start;
@@ -134,10 +162,9 @@ text-align: center;
   }
 footer{
 	background:var(--footer-background);
-	margin: 0 auto;
+	 	 
 	 
-	 
-padding: 30px; 
+padding-top:  30px; 
 }
 footer ul {
 
@@ -228,10 +255,11 @@ width: 20%;
 
 }
 .box1 h2{
-	text-align: center;
-	padding-top: 20px ;
-	padding-bottom:  20px ;
-	
+	 	padding-top: 20px ;
+	 	
+}
+.footer-logo{
+	margin-left: 120px;
 }
 @media (max-width: 500px){
 .sec{
@@ -247,6 +275,7 @@ justify-content: space-around;
 
 
 }
+
 	footer{
 		display: flex;
 		flex-direction: column;
@@ -290,5 +319,7 @@ align-items: center;
 .img1{
 width: 100%;
 }
-
+section{
+ 	padding: 0px;
+ }
 }
